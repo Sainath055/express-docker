@@ -18,6 +18,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - uses: actions/checkout@v3
       - name: Build the Docker image
-        working-directory: app
-        run: docker build . --file Dockerfile --tag express-task-action:$(date +%s)
+        run: docker build . --file Dockerfile --tag express-app:$(date +%s)
